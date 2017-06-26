@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/et_producer"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/def_margin_right_left"
+        android:layout_marginRight="@dimen/def_margin_right_left"
+        android:textColor="@color/colorWhite"
+        android:inputType="textCapSentences"
+        android:textColorHint="@color/colorWhite"
+        android:hint="@string/car_producer"/>
+
+    <EditText
+        android:id="@+id/et_model"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_producer"
+        android:layout_marginLeft="@dimen/def_margin_right_left"
+        android:layout_marginRight="@dimen/def_margin_right_left"
+        android:inputType="textCapSentences"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        android:hint="@string/car_model"/>
+
+    <EditText
+        android:id="@+id/et_power"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_model"
+        android:layout_marginLeft="@dimen/def_margin_right_left"
+        android:layout_marginRight="@dimen/def_margin_right_left"
+        android:inputType="textCapSentences"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        android:hint="@string/car_power"/>
+
+    <RadioGroup
+        android:id="@+id/rg_fuel_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/et_power"
+        android:layout_marginTop="@dimen/def_margin_top"
+        android:checkedButton="@+id/checkedbtn"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/checkedbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:text="@string/diesel"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:text="@string/petrol"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:text="@string/electric"/>
+
+
+    </RadioGroup>
+
+
+
+</RelativeLayout>

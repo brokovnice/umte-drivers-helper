@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Driver\'s helper</string>
+    <string name="action_settings">Nastavení</string>
+    <string name="btn_map">Mapa tankování</string>
+    <string name="btn_map_service">Mapa servisů</string>
+    <string name="btn_cost_list">Seznam nákladů</string>
+    <string name="tv_average_consumption">Průměrná spotřeba: </string>
+    <string name="tv_km_driven">Ujetá vzdálenost: </string>
+    <string name="tv_refulling_count">Počet tankování: </string>
+    <string name="tv_lowest_consumption">Nejnižší spotřeba: </string>
+    <string name="tv_refulling_cost">Náklady za palivo: </string>
+    <string name="tv_service_cost">Náklady za servis: </string>
+    <string name="tv_total_cost">Celkem za palivo a servis: </string>
+    <string name="tv_km_mi">Míle / km </string>
+    <string name="tv_currency">Měna</string>
+    <string name="sharedPreferences">prefs_driver</string>
+    <string name="prefs_km_mile">km_mile</string>
+    <string name="prefs_last_car">last_car</string>
+    <string name="prefs_currency">currency</string>
+    <string name="prefs_currency_spinner_position">currency_pos</string>
+    <string name="list_item_fuel">Tankování</string>
+    <string name="list_item_service">Servis</string>
+    <string name="tv_new_record">Nový záznam</string>
+    <string name="tv_new_record_type_fuel">Tankování</string>
+    <string name="tv_new_record_type_service">Servis</string>
+    <string name="et_fuel_amount">Objem</string>
+    <string name="et_distance">Stav tachometru</string>
+    <string name="et_cost">Částka</string>
+    <string name="tv_save_location">Zaznamenat polohu?</string>
+    <string name="note">Poznámka</string>
+    <string name="rating">Hodnocení</string>
+    <string name="cancel">Zrušit</string>
+    <string name="save">Uložit</string>
+    <string name="delete">Smazat</string>
+    <string name="date">Datum</string>
+    <string name="car">Auto:</string>
+    <string name="car_producer">Výrobce</string>
+    <string name="car_model">Model</string>
+    <string name="car_power">Motorizace a výkon</string>
+    <string name="car_fuel">Palivo</string>
+    <string name="diesel">Diesel</string>
+    <string name="petrol">Benzín</string>
+    <string name="electric">Elektrické</string>
+    <string name="rate">Kurz</string>
+
+
+</resources>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/spinner_car_select"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/def_margin_right_left"
+                android:layout_marginRight="@dimen/def_margin_right_left"
+                android:layout_marginTop="@dimen/def_margin_top"></Spinner>
+
+
+            <TextView
+                android:id="@+id/tv_average_consumption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinner_car_select"
+                android:layout_marginLeft="@dimen/def_margin_right_left"
+                android:layout_marginRight="@dimen/def_margin_right_left"
+                android:layout_marginTop="@dimen/def_margin_right_left"
+                android:text="@string/tv_average_consumption" />
+
+            <TextView
+                android:id="@+id/tv_km_driven"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_average_consumption"
+                android:layout_marginLeft="@dimen/def_margin_right_left"
+                android:layout_marginRight="@dimen/def_margin_right_left"
+                android:layout_marginTop="@dimen/def_margin_top"
+                android:text="@string/tv_km_driven" />
+
+            <TextView
+                android:id="@+id/tv_refulling_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_km_driven"
+                android:layout_marginLeft="@dimen/def_margin_right_left"
+                android:layout_marginRight="@dimen/def_margin_right_left"
+                android:layout_marginTop="@dimen/def_margin_top"
+                android:text="@string/tv_refulling_count" />
+<!--
+            <TextView
+                android:id="@+id/tv_lowest_consumption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_refulling_count"
+                android:layout_marginLeft="@dimen/def_margin_right_left"
+                android:layout_marginRight="@dimen/def_margin_right_left"
+                android:layout_marginTop="@dimen/def_margin_top"
+                android:text="@string/tv_lowest_consumption" /> -->
+
+            <TextView
+                android:id="@+id/tv_refulling_cost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_refulling_count"
+                android:layout_marginLeft="@dimen/def_margin_right_left"
+                android:layout_marginRight="@dimen/def_margin_right_left"
+                android:layout_marginTop="@dimen/def_margin_top"
+                android:text="@string/tv_refulling_cost" />
+
+            <TextView
+                android:id="@+id/tv_service_cost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_refulling_cost"
+                android:layout_marginLeft="@dimen/def_margin_right_left"
+                android:layout_marginRight="@dimen/def_margin_right_left"
+                android:layout_marginTop="@dimen/def_margin_top"
+                android:text="@string/tv_service_cost" />
+
+            <TextView
+                android:id="@+id/tv_total_cost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_service_cost"
+                android:layout_marginLeft="@dimen/def_margin_right_left"
+                android:layout_marginRight="@dimen/def_margin_right_left"
+                android:layout_marginTop="@dimen/def_margin_top"
+                android:text="@string/tv_total_cost" />
+
+
+            <Button
+                android:id="@+id/btn_map"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_total_cost"
+                android:layout_marginLeft="@dimen/def_margin_right_left"
+                android:layout_marginRight="@dimen/def_margin_right_left"
+                android:layout_marginTop="40dp"
+                android:text="@string/btn_map" />
+
+            <Button
+                android:id="@+id/btn_map_service"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_map"
+                android:layout_marginLeft="@dimen/def_margin_right_left"
+                android:layout_marginRight="@dimen/def_margin_right_left"
+                android:layout_marginTop="@dimen/def_margin_top"
+                android:text="@string/btn_map_service" />
+
+            <Button
+                android:id="@+id/btn_cost_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_map_service"
+                android:layout_marginLeft="@dimen/def_margin_right_left"
+                android:layout_marginRight="@dimen/def_margin_right_left"
+                android:layout_marginTop="@dimen/def_margin_top"
+                android:text="@string/btn_cost_list" />
+
+        </RelativeLayout>
+
+        </ScrollView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/def_margin_top"
+        android:layout_marginRight="@dimen/def_margin_top"
+        android:src="@drawable/ic_add_black_24dp" />
+
+    <FrameLayout
+        android:id="@+id/fragmentMap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

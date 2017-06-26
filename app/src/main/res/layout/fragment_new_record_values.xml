@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/def_margin_top"
+        style="@style/Base.TextAppearance.AppCompat.Medium"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/et_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/def_margin_top"
+        android:hint="@string/date"
+        android:inputType="date" />
+
+        <EditText
+            android:id="@+id/et_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/et_cost"
+            android:inputType="numberDecimal"
+            android:layout_below="@+id/et_date"
+            android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/et_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_price"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/def_margin_top"
+        android:hint="@string/et_fuel_amount"
+        android:inputType="numberDecimal" />
+
+
+
+        <EditText
+            android:id="@+id/et_distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_amount"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/def_margin_top"
+            android:hint="@string/et_distance"
+            android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/et_note"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/et_distance"
+        android:layout_marginTop="@dimen/def_margin_top"
+        android:hint="@string/note" />
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_note"
+        android:layout_marginTop="@dimen/def_margin_top">
+
+    <RatingBar
+        android:id="@+id/ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:numStars="5"
+        android:stepSize="1"         />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="@dimen/bigger_margin_right_left"
+        android:layout_below="@id/layout">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:id="@+id/btn_close"
+            android:text="@string/cancel"/>
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/delete"
+            android:visibility="gone"/>
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_height="wrap_content"
+            android:text="@string/save"/>
+
+
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
